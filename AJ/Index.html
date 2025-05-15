@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sistema Organizacional Computacional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacion.css">
+</head>
+<body>
+    <div id="animacion-inicio">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+        </div>
+        <h1>Cargando el Sistema...</h1>
+    </div>
+
+    <div id="contenido-principal" class="oculto">
+        <header>
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>El Sistema Organizacional Computacional</h1>
+            <p>Explorando la administración y las organizaciones desde una perspectiva de ingeniería de sistemas.</p>
+            <nav>
+                <ul>
+                    <li><a href="#procesos-seccion">Procesos Administrativos</a></li>
+                    <li><a href="#evolucion-seccion">Evolución Histórica</a></li>
+                    <li><a href="#principios-seccion">Principios Fundamentales</a></li>
+                    <li><a href="#organizacion-seccion">Organización Computacional</a></li>
+                    <li><a href="#impacto-seccion">Impacto en Arquitecturas</a></li>
+                    <li><a href="#contacto-seccion">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="procesos-seccion" class="seccion activa">
+                <h2>Procesos Administrativos en Sistemas Computacionales</h2>
+                <div class="contenido">
+                    <p>La ingeniería de sistemas aplica el ciclo administrativo (planear-organizar-dirigir-controlar) mediante herramientas específicas, análogas a las fases del desarrollo de software y la gestión de la infraestructura IT.</p>
+                    <h3>Planeación</h3>
+                    <p>En el contexto computacional, la planeación implica la definición de los objetivos del sistema (requisitos), la creación de estrategias para alcanzarlos (arquitectura del sistema, diseño de la solución), y la asignación de recursos (presupuesto, personal, hardware, software). Herramientas como Ansible y Terraform permiten planificar y provisionar la infraestructura de manera declarativa y automatizada.</p>
+                    <h3>Organización</h3>
+                    <p>La organización se refiere a la estructuración del sistema y la asignación de responsabilidades. En ingeniería de sistemas, esto se traduce en el diseño de la arquitectura (modular, distribuida, etc.) y la definición de las interfaces entre los componentes. Diagramas UML y BPMN son utilizados para modelar estas arquitecturas y los flujos de trabajo dentro del sistema.</p>
+                    <h3>Dirección</h3>
+                    <p>La dirección implica guiar y coordinar los recursos para la ejecución de los planes. En sistemas computacionales, esto se manifiesta en la gestión de los equipos de desarrollo y operaciones, la implementación de flujos de trabajo (pipelines de CI/CD con Jenkins o GitLab), y la comunicación efectiva entre los diferentes roles.</p>
+                    <h3>Control</h3>
+                    <p>El control asegura que el sistema opere de acuerdo con los planes y objetivos establecidos. Esto se logra mediante el monitoreo del rendimiento (con herramientas como Prometheus y Zabbix), la detección y resolución de problemas, y la implementación de mecanismos de retroalimentación para la mejora continua.</p>
+                    <h3>Casos Emblemáticos:</h3>
+                    <ul>
+                        <li>**Google SRE:** El Site Reliability Engineering en Google combina la administración de sistemas con la ingeniería de software para gestionar servicios a escala global, enfocándose en la fiabilidad, el rendimiento y la eficiencia mediante la automatización y el monitoreo continuo.</li>
+                        <li>**Amazon Web Services:** AWS aplica principios de administración ágil en su modelo de actualizaciones continuas (más de 200 lanzamientos diarios), priorizando la flexibilidad, la rápida iteración y la respuesta a las necesidades del cliente.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="evolucion-seccion" class="seccion">
+                <h2>Evolución Histórica: De Mainframes a Microservicios</h2>
+                <div class="contenido">
+                    <p>La organización computacional ha experimentado una profunda transformación a través de cuatro revoluciones tecnológicas, cada una con un impacto significativo en cómo se diseñan, implementan y gestionan los sistemas.</p>
+                    <h3>Era Mainframe (1960s)</h3>
+                    <p>Caracterizada por computadoras centrales de gran tamaño (como el IBM 650), la administración era altamente centralizada, con jerarquías rígidas y recursos de cómputo compartidos por toda la organización. El procesamiento por lotes era común, y los roles eran menos especializados.</p>
+                    <h3>Cliente-Servidor (1980s)</h3>
+                    <p>La distribución de la funcionalidad entre un frontend (cliente) y un backend (servidor) marcó esta era. Surgieron roles especializados como administradores de bases de datos (DBA) y administradores de redes, reflejando la creciente complejidad de los sistemas distribuidos.</p>
+                    <h3>Web Services (2000s)</h3>
+                    <p>La adopción de arquitecturas orientadas a servicios (SOA) con tecnologías como SOAP y REST permitió la interoperabilidad entre diferentes sistemas. La virtualización de recursos (con VMware y Hyper-V) introdujo una mayor flexibilidad y eficiencia en la gestión de la infraestructura.</p>
+                    <h3>Cloud Native (2010s-Actualidad)</h3>
+                    <p>La computación en la nube, impulsada por contenedores (Docker, Kubernetes) y arquitecturas serverless (AWS Lambda), ha llevado a una mayor agilidad, escalabilidad y resiliencia. La infraestructura inmutable y la automatización son principios clave, permitiendo ciclos de implementación drásticamente reducidos.</p>
+                    <p class="dato-relevante">La adopción de prácticas Cloud Native ha demostrado reducir los ciclos de implementación de sistemas críticos de aproximadamente 6 meses a tan solo 15 minutos (CNCF, 2024).</p>
+                </div>
+            </section>
+
+            <section id="principios-seccion" class="seccion">
+                <h2>Principios Fundamentales en Sistemas</h2>
+                <div class="contenido">
+                    <p>La ingeniería de sistemas se basa en tres axiomas organizacionales clave para gestionar la complejidad y asegurar la efectividad de los sistemas computacionales.</p>
+                    <h3>Abstracción escalable</h3>
+                    <p>Permite manejar la complejidad ocultando los detalles innecesarios en diferentes niveles. El modelo OSI y su implementación práctica en el modelo TCP/IP son ejemplos de abstracción en redes. La virtualización de hardware (Hypervisors Type 1) abstrae la capa física, permitiendo la gestión de múltiples sistemas operativos en un solo hardware.</p>
+                    <h3>Modularidad acoplable</h3>
+                    <p>Divide el sistema en componentes independientes (módulos o microservicios) que se comunican a través de interfaces bien definidas (APIs). Esto facilita el desarrollo, la prueba y el despliegue independiente de cada parte. El principio de responsabilidad única (SOLID) en el diseño de software promueve la modularidad.</p>
+                    <h3>Resiliencia sistémica</h3>
+                    <p>Se refiere a la capacidad del sistema para resistir y recuperarse de fallos y errores. Patrones como el circuit breaker (implementado por Hystrix) evitan fallos en cascada. La replicación multi-zona (Multi-AZ) en la nube asegura la disponibilidad de los servicios ante fallos en una zona específica.</p>
+                    <h3>Funciones clave:</h3>
+                    <ul>
+                        <li>**Gestión de capacidad:** Asegura que el sistema tenga los recursos necesarios para manejar la demanda actual y futura (auto-scaling groups en la nube).</li>
+                        <li>**Gobierno de datos:** Define las políticas y procedimientos para garantizar la integridad, seguridad y conformidad de los datos (GDPR compliance).</li>
+                        <li>**Ciberseguridad perimetral:** Protege el sistema de amenazas externas mediante firewalls de próxima generación y otros mecanismos de seguridad.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="organizacion-seccion" class="seccion">
+                <h2>Organización Computacional: Formal vs. Informal</h2>
+                <div class="contenido">
+                    <p>La estructura y los procesos de una organización computacional pueden ser tanto formales (definidos y documentados) como informales (emergentes y basados en relaciones).</p>
+                    <h3>Formal (Waterfall)</h3>
+                    <p>Caracterizada por estructuras jerárquicas claras y procesos definidos (como ITIL o COBITS), la comunicación sigue canales oficiales (tickets de servicio). Las ventajas incluyen auditorías certificables y un control más estricto, pero las desventajas son la rigidez ante cambios y la posible acumulación de deuda técnica.</p>
+                    <h3>Informal (DevOps)</h3>
+                    <p>Se basa en estructuras más planas y colaborativas (como los squads, tribus y guildas de Spotify), con comunicación directa y herramientas como SlackOps y Chaos Engineering para la resolución rápida de problemas. La principal ventaja es un time-to-market más rápido, pero puede haber desafíos en la estandarización y la documentación.</p>
+                    <h3>Tendencias híbridas:</h3>
+                    <ul>
+                        <li>**GitOps:** Combina el control formal (Git como única fuente de verdad para la configuración) con la implementación ágil y automatizada.</li>
+                        <li>**FinOps:** Un modelo financiero para la gestión de costos en entornos cloud multi-nube, buscando la eficiencia y la transparencia en el gasto.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="impacto-seccion" class="seccion">
+                <h2>Impacto en Arquitecturas Empresariales</h2>
+                <div class="contenido">
+                    <p>Los sistemas modernos enfrentan desafíos técnicos y administrativos que están transformando las arquitecturas empresariales.</p>
+                    <ul>
+                        <li>**Edge computing:** La necesidad de latencia ultrabaja (&lt;5ms) para aplicaciones como IoT y vehículos autónomos requiere nuevos modelos de administración descentralizada, acercando el procesamiento y el almacenamiento a la fuente de los datos.</li>
+                        <li>**Quantum readiness:** La preparación para la criptografía post-cuántica (estandarización NIST PQC) es crucial para proteger la información sensible a largo plazo contra las futuras capacidades de las computadoras cuánticas.</li>
+                        <li>**SRE 2.0 (AIops):** La incorporación de machine learning e inteligencia artificial (AIops) en Site Reliability Engineering permite predecir fallos, automatizar la resolución de problemas y optimizar el rendimiento de manera proactiva.</li>
+                    </ul>
+                    <h3>Datos reveladores (Gartner 2025):</h3>
+                    <ul>
+                        <li>Se espera que el 40% de las empresas utilicen plataformas autónomas para la gestión de sistemas, reduciendo la intervención humana en tareas rutinarias.</li>
+                        <li>El 65% de las empresas reducirán sus equipos de soporte de TI mediante la implementación de chatbots cognitivos para la atención al usuario y la resolución de problemas básicos.</li>
+                    </ul>
+                    <p class="conclusion">Esta evolución demuestra que la administración en ingeniería de sistemas requiere un equilibrio dinámico entre la estructura formal y la adaptabilidad tecnológica, donde la automatización inteligente se convierte en el núcleo de la eficiencia organizacional y la innovación.</p>
+                </div>
+            </section>
+
+            <section id="contacto-seccion" class="seccion">
+                <h2>¿Tienes Preguntas? ¡Contáctame!</h2>
+                <div class="contenido">
+                    <p>Si tienes alguna pregunta o comentario sobre la información presentada, no dudes en enviarme un correo electrónico a través del siguiente formulario.</p>
+                    <form id="formulario-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pregunta">Pregunta:</label>
+                            <textarea id="pregunta" name="pregunta" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar Pregunta</button>
+                        <div id="mensaje-enviado" class="oculto">¡Tu mensaje ha sido enviado!</div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 - El Sistema Organizacional Computacional</p>
+            <p>Desarrollado por: Javier Araujo</p>
+            <p>Teléfono: 04124051882</p>
+            <p>Correo: javieraraujo182@gmail.com</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/animacion.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>
